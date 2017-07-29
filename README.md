@@ -45,3 +45,11 @@ python flask_app.py
 ```
 
 This will spool up a mini web server on your laptop using flask. From there you'll need to open a browser to
+
+```
+http://localhost:9090
+```
+
+And there you should see this page
+
+![Webpage Image](static/css/images/Webpage.png)
