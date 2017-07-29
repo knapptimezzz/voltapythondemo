@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Volta Charging</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/css/main.css" />
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1><a href="#">Volta Charging Record Parser</a></h1>
+					<p>Just a simple, single page web application<br />
+					for Volta Charging. Used for record parsing.<br />
+					By Jeff Knapp
+				</div>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<header class="major">
+					<h2>Search Form</h2>
+				</header>
+				<div class="inner">
+					<section>
+						<form method="post" action="#">
+							<div class="row uniform">
+								<div class="6u 12u$(xsmall)">
+									<label for="startdate">Start Date</label>
+									<input type="text" name="startdate" id="startdate" value="" placeholder="mm/dd/yyyy" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<label for="enddate">End Date</label>
+									<input type="text" name="enddate" id="enddate" value="" placeholder="mm/dd/yyyy" />
+								</div>
+								<div class="12u$">
+									<label for="startdate">Topic</label>
+									<div class="select-wrapper">
+										<select name="demo-category" id="demo-category">
+											<option value="1">All Topics</option>
+											<option value="2">ChargerState</option>
+											<option value="3">ChargerStateStarted</option>
+											<option value="4">ChargerStateFinished</option>
+										</select>
+									</div>
+								</div>
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Process Form" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+										<li><a href="#" class="button special icon fa-download">Download CSV</a></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</section>
+
+			<section id="two" class="wrapper style2 special">
+				<header class="major">
+					<h2>App Details</h2>
+				</header>
+				<p>
+					This application perfors the same exact thing as the command line application; it's just prettier.<br/>
+					Because at the end of the day, good looking things that work are the reason why businesses succeed.<br/>
+					This app was built using free open source templates available for private and commercial use.
+				</p>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/skel.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
