@@ -1,0 +1,8 @@
+# Remove any compiled Python files
+*.pyc
+
+# Hide mac-ish hidden files
+*.DS_Store
+
+# Remove any results that I have (no cheating now! :P )
+*.csv
