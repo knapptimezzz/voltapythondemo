@@ -23,9 +23,6 @@ for i in range(0, len(sys.argv)):
     if sys.argv[i] == "-t":
         topic = sys.argv[i + 1]
 
-# Create and instance of the class
-sns = SnSMessenger.SnSMessenger(topic=topic, start=start, end=end)
-
 # If the user wants help
 if help_menu:
     # Show the user the help menu
@@ -41,5 +38,8 @@ if help_menu:
     # Exit the application (normally)
     sys.exit(0)
 else:
+    # Create and instance of the class
+    sns = SnSMessenger.SnSMessenger(topic=topic, start=start, end=end, pointer='SnsArchive2017')
+    # Build a list of files
+    sns.fetchFileList()
     sns.processFiles()
-    #sns.writeFile()
