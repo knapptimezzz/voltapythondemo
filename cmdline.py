@@ -1,5 +1,8 @@
-# Library imports
+# Built in Library
 import sys
+import datetime
+
+# Custome library imports
 import SnSMessenger
 
 # Initialize variables
@@ -38,6 +41,40 @@ if help_menu:
     # Exit the application (normally)
     sys.exit(0)
 else:
+    # --------------------
+    # Clean up input for the main class
+    # --------------------
+    # If we have time
+    if start is not None:
+        # If the time is just at date (no time)
+        if len(start) <= 10:
+            results = start.split("/")
+            # Create a datetime for it
+            start = datetime.datetime(int(results[2]), int(results[0]), int(results[1]), 0, 0, 0)
+        # Else we have date and time to deal with
+        elif len(start) > 10:
+            results = start.split("-")
+            results = results[0].split("/") + results[1].split(":")
+            # Build a datetime for that
+            start = datetime.datetime(int(results[2]), int(results[0]), int(results[1]), int(results[3]), int(results[4]), int(results[5]))
+    # Process end time
+    if end is not None:
+        # If the time is just at date (no time)
+        if len(end) <= 10:
+            results = start.split("/")
+            # Create a datetime for it
+            end = datetime.datetime(int(results[2]), int(results[0]), int(results[1]), 0, 0, 0)
+        # Else we have date and time to deal with
+        elif len(end) > 10:
+            results = end.split("-")
+            results = results[0].split("/") + results[1].split(":")
+            # Build a datetime for that
+            end = datetime.datetime(int(results[2]), int(results[0]), int(results[1]), int(results[3]), int(results[4]), int(results[5]))
+
+    # ---------------
+    # Actually process the request
+    # ---------------
+
     # Create and instance of the class
     sns = SnSMessenger.SnSMessenger(topic=topic, start=start, end=end, pointer='SnsArchive2017')
     # Build a list of files
