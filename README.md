@@ -34,8 +34,8 @@ To view the help menu. You have several options to choose from on the command li
 | no arguments | All results from the archive |
 | --help | Help menu (overrides all other arguments) |
 | -t | Topic you wish to search on |
-| -s | Start time you wish to begin from |
-| -e | End time you wish to search to |
+| -s mm/dd/yyyy-hh:mm:ss| Start time you wish to begin from. You must have a date. Time is optional |
+| -e mm/dd/yyyy-hh:mm:ss| End time you wish to search to. You must have a date. Time is optional |
 
 ### Web Application
 To launch the web application, type
