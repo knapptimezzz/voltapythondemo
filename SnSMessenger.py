@@ -26,7 +26,7 @@ class SnSMessenger:
             self.end = end # Datetime object
         else:
             self.end = datetime.datetime.utcnow()
-
+            
 
     # This function is used in conjunction with the search parameters to build up a list of files to read
     def fetchFileList(self):

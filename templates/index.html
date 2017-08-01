@@ -25,7 +25,7 @@
 				</header>
 				<div class="inner">
 					<section>
-						<form method="post" action="#">
+						<form method="POST" action="/processform">
 							<div class="row uniform">
 								<div class="6u 12u$(xsmall)">
 									<label for="startdate">Start Date</label>
@@ -38,19 +38,19 @@
 								<div class="12u$">
 									<label for="startdate">Topic</label>
 									<div class="select-wrapper">
-										<select name="demo-category" id="demo-category">
-											<option value="1">All Topics</option>
-											<option value="2">ChargerState</option>
-											<option value="3">ChargerEventStarted</option>
-											<option value="4">ChargerEventFinished</option>
+										<select name="topic" id="demo-category">
+											<option value="">All Topics</option>
+											<option value="ChargerState">ChargerState</option>
+											<option value="ChargerEventStarted">ChargerEventStarted</option>
+											<option value="ChargerEventFinished">ChargerEventFinished</option>
 										</select>
 									</div>
 								</div>
 								<div class="12u$">
 									<ul class="actions">
-										<li><input type="submit" value="Process Form" class="special" /></li>
+										<li><input type="submit" value="Process Form" id="processform" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
-										<li><a href="#" class="button special icon fa-download">Download CSV</a></li>
+										<!-- <li><a href="#" class="button special icon fa-download">Download CSV</a></li> -->
 									</ul>
 								</div>
 							</div>
