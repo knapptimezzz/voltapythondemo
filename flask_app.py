@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 import json
 import SnSMessenger
 import datetime
@@ -58,6 +58,13 @@ def processform():
     sns.processFiles()
 
     return render_template("index.html")
+
+@app.route("/downloadfile")
+def downloadfile():
+    try:
+        return send_file('output.csv', attachment_filename="output.csv")
+    except Exception as e:
+        pass
 
 # This is the main function that will run this application
 if __name__ == "__main__":
