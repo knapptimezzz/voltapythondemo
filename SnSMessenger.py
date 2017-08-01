@@ -96,7 +96,7 @@ class SnSMessenger:
     # This function is used to write data to an output file
     def writeToFile(self):
         # Open up a file
-        fp = open("newoutput.txt", "w")
+        fp = open("output.csv", "w")
         # Write header information
         fp.write("Topic, SnS Message\n")
         # Loop through all the data
