@@ -4,6 +4,16 @@ This repos is a programming challenge for Volta Charging.
 ## How To Use This Repo
 There are two main components to this library. The first is a command line application. The second is a webpage application. You can run either application. However both should be run using Python 2.7+. I make no promises that this is application will work with Python 3.6+.
 
+## What's Important About This Repo
+This repo is designed to show a few things.
+
+1. I can write reusable code (There's code here in a class that can be run in the terminal and web application)
+2. Show I can write command line application that use libraries (classes) that I've written
+3. Show I can write a really simply python web application that uses classes that I've written for the back end
+4. Show I can tie it all together
+5. Help you understand how I write code (what I see as commits and features for a small project)
+6. Give you and idea of "full stack" skills
+
 ## Up and Running
 In order to get started you'll first need to clone down the repo
 
