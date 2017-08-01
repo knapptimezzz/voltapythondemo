@@ -37,6 +37,12 @@ To view the help menu. You have several options to choose from on the command li
 | -s mm/dd/yyyy-hh:mm:ss| Start time you wish to begin from. You must have a date. Time is optional |
 | -e mm/dd/yyyy-hh:mm:ss| End time you wish to search to. You must have a date. Time is optional |
 
+Output will be in a file labeled
+
+```
+voltapythondemo/output.csv
+```
+
 ### Web Application
 To launch the web application, type
 
@@ -53,3 +59,5 @@ http://localhost:9090
 And there you should see this page
 
 ![Webpage Image](static/css/images/Webpage.png)
+
+From there you can fill out the form and submit it. When the page refreshes you can download the file with the download button.
